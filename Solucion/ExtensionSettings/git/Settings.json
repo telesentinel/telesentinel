@@ -1,5 +1,5 @@
 ﻿{
-	"serverType": "none",
+	"serverType": "github",
 	"gitURL": "https://github.com/telesentinel",
 	"gitIsPrivateRepository": "false",
 	"gitEmail": "sistemas@telesentinel.com"
