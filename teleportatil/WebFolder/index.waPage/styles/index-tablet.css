@@ -83,12 +83,14 @@
 	 -webkit-box-shadow: transparent 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 -moz-box-shadow: transparent 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 box-shadow: transparent 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-	 background-image: url('/images/citas_btn_tbl.png');
+	
 	 font-size: 13px;
+	 background-image: url('/images/citas_btn_tbl.png');
 	 
 }
 
 #oportunidades_btn {
+	 z-index: 2;
 	 width: 120px;
 	 height: 120px;
 	 top: 213px;
@@ -112,13 +114,14 @@
 	 -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+	
 	 font-size: 13px;
 	 background-image: url('/images/oportunidades_btn_tbl.png');
-	 z-index: 2;
 	 
 }
 
 #cotizaciones_btn {
+	 z-index: 3;
 	 width: 120px;
 	 height: 120px;
 	 top: 380px;
@@ -142,13 +145,14 @@
 	 -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+	
 	 font-size: 13px;
 	 background-image: url('/images/cotizaciones_btn_tbl.png');
-	 z-index: 3;
 	 
 }
 
 #ventas_btn {
+	 z-index: 1;
 	 width: 120px;
 	 height: 120px;
 	 top: 548px;
@@ -172,9 +176,9 @@
 	 -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 	 box-shadow: rgba(0, 0, 0, 0) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+	
 	 font-size: 13px;
 	 background-image: url('/images/clientes_img_tbl.png');
-	 z-index: 1;
 	 
 }
 
