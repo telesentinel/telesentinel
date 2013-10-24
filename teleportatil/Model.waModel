@@ -1,1 +1,46 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog><extraProperties ____objectunic="true" version="1"><classes ____objectunic="true"><Contacto ____objectunic="true" panelColor="#eee"><panel ____objectunic="true" isOpen="true" pathVisible="true"><position ____objectunic="true" X="25" Y="20"/></panel></Contacto><Barrios ____objectunic="true" panelColor="#B2A2C7"><panel ____objectunic="true" isOpen="true" pathVisible="true"><position ____objectunic="true" X="355" Y="24"/></panel></Barrios></classes><model ____objectunic="true" workspaceLeft="5" workspaceTop="0"><relationCurve ____objectunic="true" run="true" mode="1"/></model></extraProperties><dataClasses name="Barrios" className="Barrios" collectionName="BarriosCollection" scope="public"><attributes name="ID" kind="storage" scope="public" indexed="true" unique="true" autosequence="true" type="long" indexKind="btree"/><attributes name="Codigo" kind="storage" scope="public" type="string"/><attributes name="Localidad" kind="storage" scope="public" type="string"/><attributes name="Nombre" kind="storage" scope="public" type="string"/><attributes name="Zona" kind="storage" scope="public" type="string"/><attributes name="contactos" kind="relatedEntities" scope="public" type="ContactoCollection" reversePath="true" path="Barrio"/><key name="ID"/></dataClasses><dataClasses name="Contacto" className="Contacto" collectionName="ContactoCollection" scope="public"><attributes name="ID" kind="storage" scope="public" indexed="true" unique="true" autosequence="true" type="string" indexKind="btree"/><attributes name="Numeracion" kind="storage" scope="public" type="long"/><attributes name="Razon_Social" kind="storage" scope="public" type="string"/><attributes name="Dir_Contacto" kind="storage" scope="public" type="string"/><attributes name="Tel_Contacto" kind="storage" scope="public" type="string"/><attributes name="Persona_contacto" kind="storage" scope="public" type="string"/><attributes name="Fecha_Contacto" kind="storage" scope="public" type="date" simpleDate="false"/><attributes name="Hora_contacto" kind="storage" scope="public" type="duration"/><attributes name="Busqueda" kind="storage" scope="public" type="string"/><attributes name="Celular" kind="storage" scope="public" type="string"/><attributes name="Email" kind="storage" scope="public" type="string"/><attributes name="Barrio" kind="relatedEntity" scope="public" type="Barrios" path="Barrios"/><attributes name="Observaciones" kind="storage" scope="public" type="string"/><attributes name="Estado" kind="storage" scope="public" type="string"/><attributes name="Medio_contacto" kind="storage" scope="public" type="string"/><attributes name="Tipo" kind="storage" scope="public" type="string"/><attributes name="Timestamp" kind="storage" scope="public" type="uuid"/><key name="ID"/></dataClasses></EntityModelCatalog>
+﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog>
+	<extraProperties ____objectunic="true" version="1">
+		<classes ____objectunic="true">
+			<Contacto ____objectunic="true" panelColor="#eee">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="25" Y="20"/>
+				</panel>
+			</Contacto>
+			<Barrios ____objectunic="true" panelColor="#B2A2C7">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="591" Y="91"/>
+				</panel>
+			</Barrios>
+		</classes>
+		<model ____objectunic="true" workspaceLeft="0" workspaceTop="0">
+			<relationCurve ____objectunic="true" run="true" mode="1"/>
+		</model>
+	</extraProperties>
+	<dataClasses name="Barrios" className="Barrios" collectionName="BarriosCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autosequence="true" type="long" indexKind="btree" primKey="true"/>
+		<attributes name="Codigo" kind="storage" scope="public" type="string"/>
+		<attributes name="Localidad" kind="storage" scope="public" type="string"/>
+		<attributes name="Nombre" kind="storage" scope="public" type="string"/>
+		<attributes name="Zona" kind="storage" scope="public" type="string"/>
+		<attributes name="contactos" kind="relatedEntities" scope="public" type="ContactoCollection" reversePath="true" path="Barrio"/>
+	</dataClasses>
+	<dataClasses name="Contacto" className="Contacto" collectionName="ContactoCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autosequence="true" type="string" indexKind="btree" primKey="true"/>
+		<attributes name="Numeracion" kind="storage" scope="public" type="long"/>
+		<attributes name="Razon_Social" kind="storage" scope="public" type="string"/>
+		<attributes name="Dir_Contacto" kind="storage" scope="public" type="string"/>
+		<attributes name="Tel_Contacto" kind="storage" scope="public" type="string"/>
+		<attributes name="Persona_contacto" kind="storage" scope="public" type="string"/>
+		<attributes name="Fecha_Contacto" kind="storage" scope="public" type="date" simpleDate="false"/>
+		<attributes name="Hora_contacto" kind="storage" scope="public" type="duration"/>
+		<attributes name="Busqueda" kind="storage" scope="public" type="string"/>
+		<attributes name="Celular" kind="storage" scope="public" type="string"/>
+		<attributes name="Email" kind="storage" scope="public" type="string"/>
+		<attributes name="Barrio" kind="relatedEntity" scope="public" type="Barrios" path="Barrios"/>
+		<attributes name="Observaciones" kind="storage" scope="public" type="string"/>
+		<attributes name="Estado" kind="storage" scope="public" type="string"/>
+		<attributes name="Medio_contacto" kind="storage" scope="public" type="string"/>
+		<attributes name="Tipo" kind="storage" scope="public" type="string"/>
+		<attributes name="Timestamp" kind="storage" scope="public" type="uuid"/>
+	</dataClasses>
+</EntityModelCatalog>
